@@ -1,0 +1,16 @@
+services:
+    pihole:
+        stdin_open: true
+        tty: true
+        privileged: true
+        container_name: pihole
+        volumes:
+            - ./pihole:/etc/pihole:rw
+        environment:
+            - WEBPASSWORD=pass
+        ports:
+            - 80:80
+            - 53:53/udp
+            - 53:53/tcp
+        image: piholelcars:5183
+        command: bash
