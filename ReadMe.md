@@ -2,7 +2,7 @@
 Pi-hole Docker image
 
 # To Build
-docker build -it [Image Name]:{Version You Want} {Path of the Docker File} --no-cache
+docker build -t [Image Name]:{Version You Want} {Path of the Docker File} --no-cache
 
 # To Run
 In the folder located where the "docker-compose.yml" is located create a folder named "pihole"
